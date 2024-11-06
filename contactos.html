@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto Belford Company</title>
+
+    <!-- Enlace para los íconos de Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        /* Barra de navegación fija */
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 9999;
+            animation: slideDown 1s ease-in-out; /* Animación de entrada */
+        }
+
+        /* Animación de deslizar hacia abajo */
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s; /* Transición de color y transformación */
+        }
+
+        nav a:hover {
+            background-color: #575757;
+            transform: scale(1.1); /* Aumentar tamaño al pasar el ratón */
+        }
+
+        .cart {
+            float: right; /* Alinear el carrito a la derecha */
+            transition: transform 0.3s; /* Transición para la animación */
+        }
+
+        .cart:hover {
+            transform: scale(1.2); /* Aumentar tamaño del carrito al pasar el ratón */
+        }
+
+        .cart i {
+            font-size: 20px; /* Tamaño del ícono del carrito */
+            margin-right: 10px;
+        }
+
+        /* Espacio para que no se superponga con el contenido */
+        .content {
+            padding-top: 80px; /* Espacio para que la barra fija no tape el contenido */
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        /* Sección de contacto */
+        .contact-section {
+            padding: 50px;
+            text-align: center;
+            background-color: white;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .contact-icons {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .contact-icons a {
+            font-size: 40px;
+            color: #333;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        .contact-icons a:hover {
+            transform: scale(1.2); /* Aumentar tamaño al pasar el mouse */
+            color: #ffcc00; /* Cambiar color en hover */
+        }
+
+        /* Estilo para el texto de contacto */
+        .contact-info {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        /* Sección "¿Quieres trabajar con nosotros?" */
+        .work-section {
+            margin-top: 50px;
+        }
+
+        .work-section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .cv-icon {
+            font-size: 60px;
+            color: #333;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        .cv-icon:hover {
+            transform: scale(1.2);
+            color: #ffcc00;
+        }
+    </style>
+
+    <script>
+        // Función para mostrar el nombre de la sección
+        function mostrarNombre(nombre) {
+            document.getElementById("nombreSeccion").textContent = "Estás en: " + nombre;
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <nav>
+		<a Text="BELFORD.html">BELFORD®</a>
+        <a href="index.html">Inicio</a>
+        <a href="Acerca de.html">Acerca de</a>
+        <a href="Productos.html">Productos</a>
+        <a href="contactos.html">Contacto</a>
+		<a href="galeria de fotos.html">Galeria</a>
+        <div class="cart">
+            <a href="carrito.html" onclick="mostrarNombre('Carrito')">
+                <i class="fas fa-shopping-cart"></i>
+                Carrito
+            </a>
+        </div>
+        <span id="nombreSeccion"></span>
+    </nav>
+
+    <!-- Sección de contenido -->
+    <div class="content">
+        <div class="contact-section">
+            <h1>Contacto</h1>
+
+            <!-- Íconos de contacto -->
+            <div class="contact-icons">
+                <a href="https://wa.me/123456789" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/belford.store/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://tiktok.com/@belford_company" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="https://facebook.com/belford_company" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="mailto:belford.com@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+
+            <!-- Información de contacto adicional -->
+            <p class="contact-info">belford.com@gmail.com</p>
+
+            <!-- Sección "¿Quieres trabajar con nosotros?" -->
+            <div class="work-section">
+                <h2>¿Quieres trabajar con nosotros?</h2>
+                <p>Envía tu CV haciendo clic en el ícono a continuación:</p>
+                <a href="mailto:cv@belford.com" title="Enviar CV por correo"><i class="fas fa-file-alt cv-icon"></i></a>
+            </div>
+        </div>
+    </div>
+	
+	<div class="contact-form-section">
+    <h2>Contáctanos</h2>
+    <form action="tu-servidor-o-url-de-procesamiento" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+
+<!-- Estilos para el formulario -->
+<style>
+    .contact-form-section {
+        margin-top: 50px;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+
+    .contact-form-section form {
+        display: inline-block;
+        text-align: left;
+    }
+
+    .contact-form-section label {
+        font-size: 18px;
+        color: #333;
+        margin-top: 10px;
+        display: block;
+    }
+
+    .contact-form-section input, 
+    .contact-form-section textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .contact-form-section button {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .contact-form-section button:hover {
+        background-color: #575757;
+    }
+</style>
+
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de Belford Company</title>
+    <style>
+		
+		
+		
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        
+        /* Fondo gris para la sección principal */
+        .about-section {
+            background-color: #333;
+            color: white;
+            padding: 50px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out; /* Animación de entrada */
+        }
+
+        /* Animación de desvanecimiento */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Animación para el contenido */
+        .about-content {
+            animation: slideIn 2s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .highlight {
+            color: #ffcc00; /* Color destacado */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+	
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Navegación Animada</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        /* Barra de navegación */
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 9999;
+            animation: slideDown 1s ease-in-out; /* Animación de entrada */
+        }
+
+        /* Animación de deslizar hacia abajo */
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s; /* Transición de color y transformación */
+        }
+
+        nav a:hover {
+            background-color: #575757;
+            transform: scale(1.1); /* Aumentar tamaño al pasar el ratón */
+        }
+
+        .cart {
+            float: right; /* Alinear el carrito a la derecha */
+            transition: transform 0.3s; /* Transición para la animación */
+        }
+
+        .cart:hover {
+            transform: scale(1.2); /* Aumentar tamaño del carrito al pasar el ratón */
+        }
+
+        .cart i {
+            font-size: 20px; /* Tamaño del ícono del carrito */
+            margin-right: 10px;
+        }
+
+        /* Espacio para que no se superponga con el contenido */
+        .content {
+            padding-top: 80px; /* Espacio para que la barra fija no tape el contenido */
+        }
+    </style>
+<head>
+<body>
+
+<nav>
+	<a Text="BELFORD.html">BELFORD®</a>
+    <a href="index.html">Inicio</a>
+    <a href="Acerca de.html">Acerca de</a>
+    <a href="Productos.html">Productos</a>
+    <a href="contactos.html">Contacto</a>
+	<a href="galeria de fotos.html">Galeria</a>
+    <div class="cart">
+        <a href="carrito.html" onclick="mostrarNombre('Carrito')">
+            <i class="fas fa-shopping-cart"></i>
+            Carrito
+        </a>
+    </div>
+    <span id="nombreSeccion"></span>
+</nav>
+	
+	
+    <div class="about-section">
+        <h1 class="about-content">Acerca de Belford Company</h1>
+        <p class="about-content">
+            <span class="highlight">Belford Company</span> es una empresa joven y dinámica, fundada en el año <span class="highlight">2022</span>, con el objetivo de transformar el mundo de la moda y el arte. Nos especializamos en el <span class="highlight">rubro textil</span>, creando diseños únicos y vanguardistas en la forma de cuadros artísticos que combinan estilo, creatividad y expresión personal.
+        </p>
+        <br>
+        <p class="about-content">
+            Nuestra historia comienza con una visión: crear prendas que no solo sean ropa, sino también una expresión de identidad. Desde nuestros humildes comienzos en 2022, hemos crecido rápidamente gracias a nuestra dedicación a la calidad y a la satisfacción de nuestros clientes. A lo largo de estos años, hemos forjado una comunidad que comparte nuestra pasión por la moda, la innovación, y la aventura.
+        </p>
+        <br>
+        <p class="about-content">
+            En <span class="highlight">Belford</span>, creemos que la moda es más que una tendencia: es un reflejo de quiénes somos y de cómo enfrentamos cada desafío de la vida. Ya sea que estés buscando algo casual o algo único, nuestras creaciones están diseñadas para inspirar y acompañarte en cada paso.
+        </p>
+    </div>
+	
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de Belford Company</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .about-section {
+            background-color: #333;
+            color: white;
+            padding: 50px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .highlight {
+            color: #ffcc00;
+            font-weight: bold;
+        }
+
+        /* Estilos para la barra de soporte técnico y redes sociales */
+        .support-bar {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .support-bar a {
+            color: #ffcc00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        .support-bar a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .social-icons {
+            margin: 20px 0;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 24px;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #ffcc00;
+        }
+    </style>
+	<head>
+<body>
+
+
+    <!-- Barra de soporte técnico y redes sociales -->
+    <div class="support-bar">
+        <p>Para soporte técnico, contáctanos a: <a href="mailto:support@belford.com">support@belford.com</a></p>
+        <div class="social-icons">
+            <a href="https://facebook.com/belford" target="_blank" title="Síguenos en Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/belford" target="_blank" title="Síguenos en Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com/belford" target="_blank" title="Síguenos en Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://linkedin.com/company/belford" target="_blank" title="Síguenos en LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+	
+</body>
+</html>
